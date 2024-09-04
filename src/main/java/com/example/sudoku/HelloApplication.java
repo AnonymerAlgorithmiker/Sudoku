@@ -14,8 +14,7 @@ public class HelloApplication extends Application {
         FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("hello-view.fxml"));
         Scene scene = new Scene(fxmlLoader.load(), 320, 240);
         Board newBoard = new Board();
-        String surpriseString = newBoard.surpriseString();
-        stage.setTitle(surpriseString);
+        stage.setTitle("Sudoku App");
         stage.setScene(scene);
         stage.show();
     }
