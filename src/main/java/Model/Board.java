@@ -24,8 +24,8 @@ public class Board {
         }
     }
 
-    //sets value for a Square if it is previously undefined
-    private void setSquare(int newValue, int x, int y){
+    //sets value for a Field if it is previously undefined
+    private void setField(int newValue, int x, int y){
         if(x<0 || y<0){
             System.out.println("Only positive Coordinates allowed");
             return;
@@ -42,8 +42,8 @@ public class Board {
         }
     }
 
-    //forcefully overrides Value of Square
-    private void fSetSquare(int newValue, int x, int y){
+    //forcefully overrides Value of Field
+    private void fSetField(int newValue, int x, int y){
         if(x<0 || y<0){
             System.out.println("Only positive Coordinates allowed");
             return;
